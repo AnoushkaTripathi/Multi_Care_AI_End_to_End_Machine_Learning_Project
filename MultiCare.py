@@ -16,13 +16,14 @@ parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 # sidebar for navigation
 with st.sidebar:
     
-    selected = option_menu('MultiCare-AI',
+    selected = option_menu('Multiple Disease Prediction System',
                           
-                          ['Diabetes Prediction with SVM',
-                           'Heart Disease Prediction with Logistic Regression',
-                           'Parkinsons Prediction with SVM'],
+                          ['Diabetes Prediction',
+                           'Heart Disease Prediction',
+                           'Parkinsons Prediction'],
                           icons=['activity','heart','person'],
                           default_index=0)
+
     
     
 # Diabetes Prediction Page
